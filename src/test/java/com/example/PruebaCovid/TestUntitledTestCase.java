@@ -31,13 +31,18 @@ public class TestUntitledTestCase {
 
   @Test
   public void testUntitledTestCase() throws Exception {
-    driver.get("https://www.google.com/search?q=coronavirus&rlz=1C1CHBF_esMX971MX971&oq=corona&aqs=chrome.0.0i433i457i512j69i57j0i402l2j0i512j46i131i433i512j0i131i433i512l3.2616j0j7&sourceid=chrome&ie=UTF-8");
-    driver.findElement(By.xpath("//div[@id='kp-wp-tab-overview']/div[3]/div/div[2]/div/div/div/div/div/div/div/div/a/h3")).click();
-    String textoEjecucion = driver.getTitle();
+    driver.get("https://es.uadyvirtual.uady.mx/login/index.php");
+    driver.findElement(By.id("username")).clear();
+    driver.findElement(By.id("username")).sendKeys("a15003086");
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.xpath("//section[@id='region-main']/div/div[2]/div/div/div/div/div")).click();
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.id("password")).sendKeys("Thebeatl3s<3");
+    driver.findElement(By.id("loginbtn")).click();
     
     pause(30000);
    
-    assertEquals("Coronavirus – gob.mx", driver.getTitle());
+    
   }
 
   @After
