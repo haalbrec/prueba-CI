@@ -37,7 +37,7 @@ public class TestUntitledTestCase {
     driver.findElement(By.id("password")).clear();
     driver.findElement(By.xpath("//section[@id='region-main']/div/div[2]/div/div/div/div/div")).click();
     driver.findElement(By.id("password")).clear();
-    driver.findElement(By.id("password")).sendKeys("Thebeatl3s<3");
+    driver.findElement(By.id("password")).sendKeys("tysatsgukg");
     driver.findElement(By.id("loginbtn")).click();
     
     pause(30000);
